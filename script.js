@@ -175,8 +175,7 @@ $(document).ready(function() {
     loadProducts(pcCategory, pcIcon);
   });
   
-
-  
+/*    Zendesk Default     */
   //Submit a Request
   $('.submit-a-request').html('Contact Support');
   
