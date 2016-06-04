@@ -9,21 +9,21 @@ $(document).ready(function() {
     "https://turtlebeachhelp.zendesk.com/hc/sections/204277868",
     //Elite 800
     "https://turtlebeachhelp.zendesk.com/hc/sections/204131137",
-		//Stealth 500P
+    //Stealth 500P
     "https://turtlebeachhelp.zendesk.com/hc/sections/204147568",
-		//PX24
+    //PX24
     "https://turtlebeachhelp.zendesk.com/hc/sections/204131147",    
-		//Recon 60P
+    //Recon 60P
     "https://turtlebeachhelp.zendesk.com/hc/sections/204152008",
-		//Recon 50P
+    //Recon 50P
     "https://turtlebeachhelp.zendesk.com/hc/sections/204152508",
-		//P4c
+    //P4c
     "https://turtlebeachhelp.zendesk.com/hc/sections/204152518",    
-		//P12
+    //P12
     "https://turtlebeachhelp.zendesk.com/hc/sections/204174928",    
-		//PX4
+    //PX4
     "https://turtlebeachhelp.zendesk.com/hc/sections/204244668",
-		//Star Wars Battlefront Sandtrooper
+    //Star Wars Battlefront Sandtrooper
     "https://turtlebeachhelp.zendesk.com/hc/sections/204218617"    
     ];
   var ps4Icon = [
