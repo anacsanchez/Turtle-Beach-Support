@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
   //PS4 Categories
-	var ps4Category = [
+  var ps4Category = [
     //Stealth 400
     "https://turtlebeachhelp.zendesk.com/hc/sections/204277868",
     //Elite 800
@@ -141,12 +141,12 @@ $(document).ready(function() {
     selected.addClass(classSelected);
   };
   
-	var loadProducts = function(headsetArray, headsetIcon) {
+  var loadProducts = function(headsetArray, headsetIcon) {
     for (var i = 0; i < headsetArray.length; i++)
     {
        $('.headset-list').append('<li><div class="headset-icon"><a href="' + headsetArray[i] + '"><img src="' + headsetIcon[i] + '></a></div></li>');  
     }
-  };
+   };
   
   var removePromoted = function() {
     $('.promoted-articles-list').remove();
