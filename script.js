@@ -131,8 +131,8 @@ $(document).ready(function() {
     //Z300
     ' " alt="Z300"'    
     ];
-  var selected = $('.ps4-over');
- 	var classSelected = 'ps4-active';
+  var selected = $('.category');
+  var classSelected = 'active';
   
   var swap = function(s, c){
     selected.removeClass(classSelected);
@@ -142,36 +142,34 @@ $(document).ready(function() {
   };
   
   var loadProducts = function(headsetArray, headsetIcon) {
+    $('.headset-list').hide();
     for (var i = 0; i < headsetArray.length; i++)
     {
-       $('.headset-list').append('<li><div class="headset-icon"><a href="' + headsetArray[i] + '"><img src="' + headsetIcon[i] + '></a></div></li>');  
+       $('.headset-list').append('<li><div class="headset-icon"><a href="' + headsetArray[i] + '"><img src="' + headsetIcon[i] + '></a></div></li>');
     }
-   };
-  
-  var removePromoted = function() {
-    $('.promoted-articles-list').remove();
-    $('.promoted-articles').html('<div class="headset-list"></div>');
-    $('.headset-list').append('<h1 class="select-product">Select Your Product</h1><hr>');
+    $('.headset-list').fadeIn("fast");
   };
+  
+  $('category-list li').click(function() {
+	$('.promoted-articles-list').hide();
+	$('.headset-list').html('<h1 class="select-product">Select Your Product</h1><hr>');
+  });
   
   //Display PS4 Headsets
   $('.ps4-list').click(function() {
     swap('.ps4-over','ps4-active');
-		removePromoted();
     loadProducts(ps4Category, ps4Icon);
   });
   
   //Display Xbox One Headsets
   $('.x1-list').click(function() {
     swap('.x1-over','x1-active');
-    removePromoted();
     loadProducts(x1Category, x1Icon);
   });
   
   //Display PC Headsets
   $('.pc-list').click(function() {
     swap('.pc-over','pc-active');
-    removePromoted();
     loadProducts(pcCategory, pcIcon);
   });
   
