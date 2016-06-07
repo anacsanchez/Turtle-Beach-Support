@@ -1,0 +1,54 @@
+<section class="clearfix">
+  <h1 class = "page-title"> Products by platform </h1>
+  <p class = "page-instructions">Select the gaming platform your product was designed for<p>
+  	<div class="knowledge-base">  
+      <!-- List of Categories -->
+    	<ul class="category-list">  
+      	{{#each categories}}
+
+        {{#is name 'PS4'}}<li class="ps4-list"><a><div class="cat-icon ps4-over"></div></a></li>{{/is}}
+        {{#is name 'Xbox One'}}<li class="x1-list"><a><div class="cat-icon x1-over"></div></a></li>{{/is}}        
+        {{#is name 'PC / Mac'}}<li class="pc-list"><a><div class="cat-icon pc-over"></div></a></li>{{/is}}
+          {{#is name 'PS3'}}<li class="ps3-list"><a href="{{url}}"><img src="//p5.zdassets.com/hc/theme_assets/992153/200243747/ps3-over.png" alt="PS3"></a></li>{{/is}}
+          {{#is name 'Xbox 360'}}<li class="x360-list"><a href="{{url}}"><img src="//p5.zdassets.com/hc/theme_assets/992153/200243747/xbox360-over.png" alt="Xbox 360"></a></li>{{/is}}
+          {{#is name 'Mobile'}}<li><a href="{{url}}"><img src="//p5.zdassets.com/hc/theme_assets/992153/200243747/mobile-over.png" alt="Mobile"></a></li>{{/is}}
+
+      	{{/each}}
+      	{{pagination}}    
+    	</ul>
+  	</div>
+    <!-- Promoted Articles -->
+      {{#if promoted_articles}}
+      	<section class="promoted-articles">
+          <div class="headset-list">
+          </div>
+          <div class="promoted-articles-list">
+        	<h2>{{t 'promoted_articles'}}</h2>
+          <hr>
+        		<ul>
+          		{{#each promoted_articles}}
+            		<li>
+              		<a href="{{url}}">{{title}}</a>
+            		</li>
+          		{{/each}}
+       			</ul>
+          </div>
+      	</section>
+    	{{/if}}
+  
+ <!-- Unused because Community isn't active
+  <div class="community">
+    {{#if help_center.community_enabled}}
+      <h4>
+        {{t 'community'}}
+        {{#link 'community'}}
+          {{t 'browse'}}
+        {{/link}}
+      </h4>
+    {{/if}}
+    {{recent_activity scope='community'}}
+  </div>
+-->
+  
+</section>
+
