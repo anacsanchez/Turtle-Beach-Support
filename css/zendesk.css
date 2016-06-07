@@ -1,4 +1,7 @@
-/* Base styles */
+/* ====================================================
+   Base styles
+   ==================================================== */
+
 *, input[type=search] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6,58 +9,75 @@
 }
 
 html {
+  background-color: $color_2;
+}
+
+body {
+  color: $color_4;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+}
+
+a {
+  color: $color_5;
+  text-decoration: none;
+}
+
+html {
   background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/bkg_page.jpg");
 }
 
-/*
-html {  background-color: $color_2;}
-*/
-
-body {
-  background-image: url("");
-  color: $color_4;
-  font-family: $font_1;
-  font-size: 13px;
-  font-weight: lighter;
-  line-height: 1.5;
-  margin: 0;
-  padding-bottom: 50px;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.cat-icon {
-  width: 113px;
-  height: 141px;
+a:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
-.ps4-over {
-  background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/ps4-over.png");
+p {
+  margin-top: 0;
 }
 
-.ps4-active {
-  background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/ps4-active.png");
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: $font_1; */
+  font-weight: normal;
 }
 
-
-.x1-over {
-   background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/xbox1-over.png");
+h1 {
+  font-size: 1.75em;
+  line-height: 1.75em;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.x1-active {
-  background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/xbox1-active.png");
+h1 {
+  font-size: 20px;
 }
 
-.pc-over {
-  background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/pc-over.png");
+.section-name
+{
+  color: #D5C783;
+  margin-left: 20px;
+  margin-bottom: 8px;
 }
 
-.pc-active {
-  background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/pc-active.png");
+.section h1 {
+  font-size: 1.75em;
+  line-height: 1.75em;
+padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.section-area h1 {
+  text-transform: capitalize;
+  
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 img[width], img[height] {
@@ -66,22 +86,6 @@ img[width], img[height] {
 
 figure > img {
   display: block;
-}
-
-a {
-  color: $color_5;
-  font-family: $font_2;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul, ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 table {
@@ -118,15 +122,73 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+/*
+html {
+  background-color: $color_2;
+}
+*/
+
+/*
+body {
+  background-image: url("");
+  color: $color_4;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 1.5;
+  margin: 0;
+  padding-bottom: 50px;
+}
+*/
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* ====================================================
+   Category styles
+   ==================================================== */
+
+.cat-icon {
+  width: 113px;
+  height: 141px;
+  cursor: pointer;
+}
+
+.ps4-over {
+  background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/ps4-over.png");
+}
+
+.ps4-active {
+  background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/ps4-active.png");
+}
+
+
+.x1-over {
+   background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/xbox1-over.png");
+}
+
+.x1-active {
+  background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/xbox1-active.png");
+}
+
+.pc-over {
+  background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/pc-over.png");
+}
+
+.pc-active {
+  background-image: url("//p5.zdassets.com/hc/theme_assets/992153/200243747/pc-active.png");
+}
+
+
 .page-instructions
 {
   text-align: center;
   color: white;
+  font-size: 16px;
 }
 
-h1 {
-  font-size: 20px;
-}
 h1 .category {
   color: white;
 }
@@ -142,7 +204,7 @@ h1 .category {
 {
   color: #D5C783;
   text-align: center;
-  font-size: 36px;
+  font-size: 40px;
 }
 
 input, label {
@@ -369,7 +431,7 @@ select::-ms-expand {
 
 .search-box:before {
   content: "\1F50D";
-  font-family: "entypo";
+  /* font-family: "entypo"; */
   font-size: 1.25em;
   line-height: 0;
   position: absolute;
@@ -672,83 +734,7 @@ select::-ms-expand {
   width: 200px;
 }
 
-/* ====================================================
-   Base styles
-   ==================================================== */
-*, input[type=search] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-html {
-  background-color: $color_2;
-}
-
-body {
-  color: $color_4;
-  font-family: $font_1;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1.5;
-  margin: 0;
-}
-
-a {
-  color: $color_5;
-  text-decoration: none;
-}
-
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-img {
-  vertical-align: middle;
-}
-
-p {
-  margin-top: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font_1;
-  font-weight: normal;
-}
-
-h1 {
-  font-size: 1.75em;
-  line-height: 1.75em;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.section-name
-{
-  color: #D5C783;
-  margin-left: 20px;
-  margin-bottom: 8px;
-}
-
-.section h1 {
-  font-size: 1.75em;
-  line-height: 1.75em;
-padding-left: 10px;
-  text-transform: uppercase;
-}
-
-.section-area h1 {
-  text-transform: capitalize;
-  
-  
-}
-
-ul, ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 /* ====================================================
    Sub Nav
@@ -2421,7 +2407,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Community post page and topic page */
-
 .topic-follow [role=button], .post-follow [role=button] {
   border-radius: 3px;
   font-size: 12px;
