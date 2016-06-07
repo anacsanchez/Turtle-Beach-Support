@@ -10,9 +10,7 @@ html {
 }
 
 /*
-html {
-  background-color: $color_2;
-}
+html {  background-color: $color_2;}
 */
 
 body {
@@ -2423,6 +2421,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Community post page and topic page */
+
 .topic-follow [role=button], .post-follow [role=button] {
   border-radius: 3px;
   font-size: 12px;
