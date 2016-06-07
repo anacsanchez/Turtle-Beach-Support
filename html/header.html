@@ -1,5 +1,57 @@
+<header class="navbar navbar-fixed-top">
+  <div class="container-fluid relative">
+    <div class="navbar-relative">
+      <div class="navbar-logo">{{#link 'help_center'}}
+      <img src="{{logo_url}}" alt="{{t 'logo'}}">
+    {{/link}}
+      </div>
+      <ul class="nav navbar-nav-full clean-list">
+        <li class="parent-menu">
+          <a class="link" alt="Shop" href="//www.shop.turtlebeach.com/us/">Shop</a>
+        </li>
+        <li class="parent-menu">
+          <a class="link" alt="eSports" href="//www.turtlebeach.com/en-us/esports/optic-gaming/">eSports</a>
+        </li>
+        <li class="parent-menu">
+          <a class="link" alt="Our Technology" href="//www.turtlebeach.com/en-us/our-technology/">Our Technology</a>
+        </li>
+        <li class="parent-menu">
+          <a class="link" alt="Blog" href="//www.turtlebeach.com/blog/">Blog</a>
+        </li>
+        <li class="parent-menu">
+          <a class="link" alt="Contact Support" href="//www.turtlebeach.com/contact-support/">Contact Support</a>
+        </li>
+      </ul>
+      </div>
+
+        <nav class="user-nav">
+          {{#if alternative_locales}}
+    			<div class="dropdown language-selector" aria-haspopup="true">
+      		<a class="dropdown-toggle">
+        {{current_locale.name}}
+      </a>
+      <span class="dropdown-menu dropdown-menu-end" role="menu">
+        {{#each alternative_locales}}
+          <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+            {{name}}
+          </a>
+        {{/each}}
+      </span>
+      </div>
+        {{/if}}
+        {{search scoped=true}}
+  			{{user_info}}
 
 
+  	{{link 'new_request' class='submit-a-request'}} 
+  	<!-- {{link 'my_activities' class='my-activities'}} -->
+
+		</nav>
+  </div>
+  </div>
+</header>
+
+<!--
 <header class="header">
       <div class="logo">{{#link 'help_center'}}
       <img src="{{logo_url}}" alt="{{t 'logo'}}">
@@ -35,3 +87,4 @@
     
   </div>
 </header>
+-->
