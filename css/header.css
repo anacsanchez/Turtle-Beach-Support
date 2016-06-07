@@ -1,0 +1,37 @@
+
+
+<header class="header">
+      <div class="logo">{{#link 'help_center'}}
+      <img src="{{logo_url}}" alt="{{t 'logo'}}">
+    {{/link}}</div>
+
+        <nav class="user-nav">
+            {{#if alternative_locales}}
+    <div class="dropdown language-selector" aria-haspopup="true">
+      <a class="dropdown-toggle">
+        {{current_locale.name}}
+      </a>
+      <span class="dropdown-menu dropdown-menu-end" role="menu">
+        {{#each alternative_locales}}
+          <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+            {{name}}
+          </a>
+        {{/each}}
+      </span>
+    </div>
+  {{/if}}
+                {{search scoped=true}}
+  {{user_info}}
+          <!-- <a href = "http://www.turtlebeach.com/contact-support" class="submit-a-request" role="button">Contact Support</a> -->
+          
+  {{link 'new_request' class='submit-a-request'}} 
+  <!-- {{link 'my_activities' class='my-activities'}} -->
+
+</nav>
+  <div class="header-inner">
+
+
+
+    
+  </div>
+</header>
