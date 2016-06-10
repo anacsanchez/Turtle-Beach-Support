@@ -10,13 +10,13 @@ $(document).ready(function() {
     userGuide:"https://turtlebeachhelp.zendesk.com/hc/en-us/articles/219022218",
     category:"https://turtlebeachhelp.zendesk.com/hc/sections/204277868",
     icon: '//p5.zdassets.com/hc/theme_assets/992153/200243747/stealth400_HS.png" alt="Stealth 400"'
-	};   
+  };   
   var elite800 = {
     name: "Elite 800",
     userGuide:"",
     category:"https://turtlebeachhelp.zendesk.com/hc/sections/204131137",
     icon: '//p5.zdassets.com/hc/theme_assets/992153/200243747/elite800_HS.png" alt="Elite 800"'
-	};  
+  };  
   var stealth500p = {
     name: "Stealth 500P",
     userGuide:"",
