@@ -340,13 +340,11 @@ $(document).ready(function() {
     ];
 
   var selected = $('.category');
- 	//var classSelected = 'active';
   var currentHeadset = $('.headset-icon');
   
   var swap = function(s){
     selected.removeClass('active');
     selected = $(s);
-    //classSelected = c;
     selected.addClass('active');
   };
   //load interactive icons
@@ -376,9 +374,9 @@ $(document).ready(function() {
   $('.category-list li').click(function() {
     $('.promoted-articles').css({"background-color": "white"});
     $('.promoted-articles-list').hide(); 
-	  $('.headset-list').html('<h1 class="select-product">Select Your Product</h1><hr>'); 
+    $('.headset-list').html('<h1 class="select-product">Select Your Product</h1><hr>'); 
 
- 		/*
+   /*
     var categoryName = $(this).attr('class');
     var categoryOver = "'." + categoryName + "-over'";
     var categoryActive = "'." + categoryName + "-active'";
@@ -394,7 +392,6 @@ $(document).ready(function() {
     swap('.ps4');
     loadProducts(ps4Headsets);
     
-    //(.headset-icon) = $('.headset-icon').find('.found');    
     $('.headset-icon').click(function () {
       currentHeadset.find('.transition').hide();      
       $(this).find('.transition').show();
