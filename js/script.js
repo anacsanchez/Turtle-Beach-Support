@@ -7,13 +7,13 @@ $(document).ready(function() {
   /***  PS4  ***/
   var stealth400 = {
     name: "Stealth 400",
-  	userGuide:"https://turtlebeachhelp.zendesk.com/hc/en-us/articles/219022218",
+    userGuide:"https://turtlebeachhelp.zendesk.com/hc/en-us/articles/219022218",
     category:"https://turtlebeachhelp.zendesk.com/hc/sections/204277868",
     icon: '//p5.zdassets.com/hc/theme_assets/992153/200243747/stealth400_HS.png" alt="Stealth 400"'
 	};   
   var elite800 = {
     name: "Elite 800",
-  	userGuide:"",
+    userGuide:"",
     category:"https://turtlebeachhelp.zendesk.com/hc/sections/204131137",
     icon: '//p5.zdassets.com/hc/theme_assets/992153/200243747/elite800_HS.png" alt="Elite 800"'
 	};  
@@ -400,8 +400,8 @@ $(document).ready(function() {
       $(this).find('.transition').show();
       // $(this).addClass('highlight');
       // $(this).addClass('center'); 
-      /* $(this).parent('li').siblings().hide(); */
-      /* $('.promoted-articles').css({"background-color": "gray"}); */
+      // $(this).parent('li').siblings().hide();
+      // $('.promoted-articles').css({"background-color": "gray"});
       //$(this).css({"text-align" : "center"});
       currentHeadset = $(this);
     });
