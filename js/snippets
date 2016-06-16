@@ -1,0 +1,79 @@
+  //load interactive icons
+  /*
+  var loadProducts = function(headsetArray) {
+    $('.headset-list').hide();
+
+    for (var i = 0; i < headsetArray.length; i++)
+    {
+       $('.headset-list').append('<li><div class="headset-icon"><img class ="found" src="' + headsetArray[i].icon + '><div class="transition"><ul><li><a href="' + headsetArray[i].userGuide + '">User Guide</a></li><li><a href="' + headsetArray[i].category + '">Troubleshooting</a></li></ul></div></div></li>');
+    }    
+    $('.headset-list').fadeIn("fast");        
+  };
+*/
+
+    /*  
+    $('.headset-icon').click(function () {
+      //currentHeadset.removeClass('highlight');
+      currentHeadset.find('.transition').hide();      
+      $(this).find('.transition').show();
+      // $(this).addClass('highlight');
+      // $(this).addClass('center'); 
+      // $(this).parent('li').siblings().hide();
+      // $('.promoted-articles').css({"background-color": "gray"}); 
+      //$(this).css({"text-align" : "center"});
+      currentHeadset = $(this);
+    });
+    */
+    
+        //highlight when hovering over icon
+    /*
+    $('.headset-icon').hover(function () {
+      $(this).addClass('highlight');
+    }, function () {
+      $(this).removeClass('highlight');
+    });
+   	*/
+    
+    /*
+    $('.headset-icon').hover(function () {
+      $(this).find('.transition').show();
+    }, function () {
+      $(this).find('.transition').hide();
+    });
+    */
+    
+    /*
+    //Display PS4 Headsets
+  $('.ps4-list').click(function() {
+    swap('.ps4-over','ps4-active');
+    loadProducts(ps4Category, ps4Icon);
+      $('.headset-icon img').on('mouseenter', function() {
+    $(this).animate({ margin: -10, width: "+=20", height: "+=20"}, 'fast');
+     })
+    .on('mouseleave', function() {
+      $(this).animate({margin: 0, width: "-= 20", height: "-=20"}, 'fast');
+    });
+  });
+*/
+  /*
+      //Display PS4 Headsets
+  $('.ps4-list').click(function() {
+    swap('.ps4-over','ps4-active');
+    loadProducts(ps4Category, ps4Icon);
+      $('.headset-icon img').hover( function() {
+    $(this).animate({ 'zoom': 1.2}, 400);
+     },
+    function() {
+      $(this).animate({'zoom': 1}, 400);
+    });
+  });
+  */
+  
+  /* 
+  $('.headset-icon').on('mouseenter', function() {
+    $(this).animate({ margin: -10, width: "+=20", height: "+=20"}, 'fast');
+     })
+    .on('mouseleave', function() {
+      $(this).animate({margin: 0, width: "-= 20", height: "-=20"}, 'fast');
+   })
+*/
