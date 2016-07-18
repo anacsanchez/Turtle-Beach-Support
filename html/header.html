@@ -1,90 +1,61 @@
-<header class="navbar navbar-fixed-top">
-  <div class="container-fluid relative">
-    <div class="navbar-relative">
-      <div class="navbar-logo">{{#link 'help_center'}}
-      <img src="{{logo_url}}" alt="{{t 'logo'}}">
-    {{/link}}
+<div class="container">
+  <header class="header">
+    <header class="navbar navbar-fixed-top">
+      <div class="container-fluid relative">
+        <div class="navbar-relative">
+          <div class="navbar-logo">
+            {{#link 'help_center'}}
+              <img src="{{logo_url}}" alt="{{t 'logo'}}">
+            {{/link}}
+          </div>
+          <ul class="nav navbar-nav-full clean-list">
+            <li class="parent-menu">
+              <a class="link" alt="Shop" href="http://shop.turtlebeach.com/us/">Shop</a>
+            </li>
+            <li class="parent-menu">
+              <a class="link" alt="Esports" href="http://www.turtlebeach.com/en-us/esports/">Esports</a>
+            </li>
+            <li class="parent-menu">
+              <a class="link" alt="Our Technology" href="http://www.turtlebeach.com/en-us/our-technology/">Our Technology</a>
+            </li>
+            <li class="parent-menu">
+              <a class="link" alt="Blog" href="http://www.turtlebeach.com/blog/">Blog</a>
+            </li>
+						<li class="parent-menu">
+              <a class="link" alt="Community" href="http://www.turtlebeach.com/en-us/community/">Community</a>
+            </li>
+            <li class="parent-menu">
+              <a class="link" alt="Sign In" href="/hc/signin">Sign In</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="nav navbar-nav-full clean-list">
-        <li class="parent-menu">
-          <a class="link" alt="Shop" href="//www.shop.turtlebeach.com/us/">Shop</a>
-        </li>
-        <li class="parent-menu">
-          <a class="link" alt="eSports" href="//www.turtlebeach.com/en-us/esports/optic-gaming/">eSports</a>
-        </li>
-        <li class="parent-menu">
-          <a class="link" alt="Our Technology" href="//www.turtlebeach.com/en-us/our-technology/">Our Technology</a>
-        </li>
-        <li class="parent-menu">
-          <a class="link" alt="Blog" href="//www.turtlebeach.com/blog/">Blog</a>
-        </li>
-        <li class="parent-menu">
-          <a class="link" alt="Contact Support" href="//www.turtlebeach.com/contact-support/">Contact Support</a>
-        </li>
-      </ul>
-      </div>
-
-        <nav class="user-nav">
-          {{#if alternative_locales}}
-    			<div class="dropdown language-selector" aria-haspopup="true">
-      		<a class="dropdown-toggle">
-        {{current_locale.name}}
-      </a>
-      <span class="dropdown-menu dropdown-menu-end" role="menu">
-        {{#each alternative_locales}}
-          <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-            {{name}}
-          </a>
-        {{/each}}
-      </span>
-      </div>
+    </header>
+    <nav class="user-nav">
+      <nav class="user-nav-inner">
+        <!-- <p class="title-nav">Knowledgebase</p> -->
+        {{#if alternative_locales}}
+    	    <div class="dropdown language-selector" aria-haspopup="true">
+      		  <a class="dropdown-toggle">
+              {{current_locale.name}}
+            </a>
+            <span class="dropdown-menu dropdown-menu-end" role="menu">
+              {{#each alternative_locales}}
+                <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">{{name}}
+                </a>
+              {{/each}}
+            </span>
+          </div>
         {{/if}}
         {{search scoped=true}}
-  			{{user_info}}
-
-
-  	{{link 'new_request' class='submit-a-request'}} 
-  	<!-- {{link 'my_activities' class='my-activities'}} -->
-
+        <!--
+        <form role="search" class="search" data-search="" action="/hc/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search Knowledgebase" />
+<input type="submit" name="commit" value="Search" /></form>
+				-->
+  			<!--{{user_info}}-->
+  	    <!-- {{link 'new_request' class='submit-a-request'}} -->
+  	    <!-- {{link 'my_activities' class='my-activities'}} -->
+      </nav>
 		</nav>
-  </div>
-  </div>
-</header>
-
-<!--
-<header class="header">
-      <div class="logo">{{#link 'help_center'}}
-      <img src="{{logo_url}}" alt="{{t 'logo'}}">
-    {{/link}}</div>
-
-        <nav class="user-nav">
-            {{#if alternative_locales}}
-    <div class="dropdown language-selector" aria-haspopup="true">
-      <a class="dropdown-toggle">
-        {{current_locale.name}}
-      </a>
-      <span class="dropdown-menu dropdown-menu-end" role="menu">
-        {{#each alternative_locales}}
-          <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-            {{name}}
-          </a>
-        {{/each}}
-      </span>
-    </div>
-  {{/if}}
-                {{search scoped=true}}
-  {{user_info}}
-          <!-- <a href = "http://www.turtlebeach.com/contact-support" class="submit-a-request" role="button">Contact Support</a> -->
-          
-  {{link 'new_request' class='submit-a-request'}} 
-  <!-- {{link 'my_activities' class='my-activities'}} -->
-
-</nav>
-  <div class="header-inner">
-
-
-
-    
-  </div>
-</header>
--->
+  </header>
+</div>
