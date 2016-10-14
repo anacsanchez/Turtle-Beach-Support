@@ -32,7 +32,6 @@ body {
   min-width: 1100px;
   position: relative;
   margin: 0;
-  /* z-index: 1; */
   height: 100%;
 }
 
@@ -721,12 +720,12 @@ select::-ms-expand {
   padding-bottom: 30px;
   background-color: white;
 }
-
+/*
 .side-column {
   float: right;
   width: 200px;
 }
-
+*/
 .side-container-left {
   height: 100%;
   position: absolute;
@@ -736,6 +735,11 @@ select::-ms-expand {
   left: 0;
   background-color: #676664;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.side-col-items {
+  /* margin-top: -40px; */
 }
 
 .side-col-left {
@@ -743,11 +747,11 @@ select::-ms-expand {
   min-width: 180px; 
   max-width: 250px;
   width: 14%;
-  background-color: #676664;
-  min-height: 600px;
+  /* background-color: #676664; */
+  min-height: 100px;
   overflow: auto;
   margin-top: -80px;
-  z-index: 2;
+  /* z-index: 0; */
 }
 
 #space {
@@ -778,6 +782,7 @@ select::-ms-expand {
   border-bottom: 1px solid gray;
   width: 99%;
   text-align: left;
+  word-wrap: break-word;
 }
 
 .side-col-inner li a {
@@ -790,16 +795,12 @@ select::-ms-expand {
 }
 
 .menuItemSpace {
-  /* font-weight: 700; */
-  /* font-weight: bold; */
   font-size: 20px;
-  /* position: initial; */
-  /* text-transform: uppercase; */
   padding-top: 5px;
-  /* float: right; */
   text-decoration: none;
   color: black;
   font-family: 'Titillium Web', sans-serif;
+  padding-left: 10px;
 }
 
 .side-col-inner a {
@@ -905,7 +906,7 @@ li.cs-items, li.cg-items {
 	background-color: white;
   width: 100%;
   min-width: 1100px;
-  z-index: 2;
+  z-index: 4;
 }
 
 .footer p {
@@ -990,7 +991,7 @@ li.cs-items, li.cg-items {
   padding-bottom: 20px;
   min-width: 1100px;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 
 .user-nav-inner {
@@ -1337,24 +1338,7 @@ button:active,
   float: left;
   position: initial;
 }
-/*
-.navbar .navbar-nav-full .parent-menu .menuItemSpace {
-  font-weight: 700;
-  font-weight: bold;
-  font-size: 16px;
-  position: initial;
-  float: left;
-  text-transform: uppercase;
-  padding: 10px 15px 18px;
-  text-decoration: none;
-  color: #383838;
-  font-family: 'Titillium Web', sans-serif;
-}
 
-.menuItemSpace:hover {
-  text-decoration: none;
-}
-*/
 .navbar .navbar-nav-full .parent-menu .sub-menu {
   position: absolute;
   top: 59px;
@@ -1652,11 +1636,7 @@ button:active,
 .article-list .other-title:hover {
   text-decoration: underline;
 }
-/*
-.article-list li {
-  line-height: 28px;
-}
-*/
+
 .category-container {
 	margin: auto;
 	text-align: center;
@@ -2090,6 +2070,10 @@ button:active,
   margin: 0 0 0 20px;
 }
 
+.article-body ol > ul {
+  margin-top: 0px;
+}
+
 .article-body ol ul li {
   list-style-type: disc;
 }
@@ -2100,6 +2084,16 @@ button:active,
 
 .article-body ol li {
   list-style-type: decimal;
+}
+
+.article-body ol > ol > li {
+  list-style-type: lower-alpha;
+  margin-top: 0px;
+}
+
+.article-body ol > ol{
+  margin-top: 0px; 
+  margin-bottom: 0px;
 }
 
 .article-body li {
