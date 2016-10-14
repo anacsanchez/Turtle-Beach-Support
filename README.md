@@ -1,3 +1,3 @@
-# zendesk
+# Turtle Beach Support Website
 
-https://turtlebeachhelp.zendesk.com/hc/en-us
+https://support.turtlebeach.com/hc/en-us/
