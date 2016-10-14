@@ -517,9 +517,9 @@ $(document).ready(function() {
     for (var i = 0; i < headsetArray.length; i++) {
        $('.headset-list').append('<li><a style ="color: ' + headsetArray[i].color + '" href="' + headsetArray[i].category + '"><div class="headset-icon"><ul><li>' + headsetArray[i].name + '</li><li><img class ="found" src="' + headsetArray[i].icon + '></li></ul></div></a></li>');
     }    
-  $('.select-title').fadeIn("fast");
-  $('.headset-list').fadeIn("fast");
-  iconHover('.headset-icon');
+    $('.select-title').fadeIn("fast");
+    $('.headset-list').fadeIn("fast");
+    iconHover('.headset-icon');
   };
   $('.category-list li div').hover(function () {
       $(this).addClass('over');
