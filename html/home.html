@@ -1,115 +1,95 @@
 <div class="container">
   <div class="side-container-left">
+    <!-- START Side nav -->       
+    <div class="side-col-inner">     
+      <ul class="side-col-items">
+        <a href="/hc"><li>{{dc 'support_home'}}</li></a>
+        {{dc 'contact_support'}}
+        <li class="cs-dropdown">{{dc 'customer_service'}}</li>
+          <a href="../hc/articles/218942197">
+            <li class="cs-items">{{dc 'return_refund_title'}}</li>
+          </a>
+          <a href="../hc/articles/218942167">
+            <li class="cs-items">{{dc 'warranty_title'}}</li>
+          </a>
+          <a href="../hc/articles/218942247">
+            <li class="cs-items">{{dc 'web_store_title'}}</li>
+          </a>
+          <a href="../hc/sections/204634368">
+            <li class="cs-items">{{dc 'more_title'}}</li>
+          </a>            
+        <li class="cg-dropdown">{{dc 'categories_title'}}</li>
+          <a href= "../hc/categories/202689837">
+            <li class="cg-items">PS4</li>
+          </a>
+          <a href= "../hc/categories/202694798">
+            <li class="cg-items">Xbox One</li>
+          </a>
+          <a href= "../hc/categories/202689847">
+            <li class="cg-items">PC / Mac</li>
+          </a> 
+          <a href= "../hc/categories/202694818">
+            <li class="cg-items">PS3</li>
+          </a>
+          <a href= "../hc/categories/202694808">
+            <li class="cg-items">Xbox 360</li>
+          </a>
+          <a href= "../hc/categories/202951987">
+            <li class="cg-items">Universal</li>
+          </a>
+          <a href= "../hc/categories/202740407">
+            <li class="cg-items">General</li>
+          </a>
+        <a href="../hc/categories/202925807">
+          <li>{{dc 'legacy_title'}}</li>
+        </a>
+      </ul>
+    </div>
+    <!-- END Side nav -->    
   </div>
   <section class="content clearfix">
     <div class="home-wrap">
-      <!-- Side nav -->
-      <div class="side-col-left">
-        <div class="side-col-inner">     
-          <ul>
-            <li id="space"></li>
-            <a href="/hc"><li>{{dc 'support_home'}}</li></a>
-            {{dc 'contact_support'}}
-            <li class="cs-dropdown">{{dc 'customer_service'}}</li>
-            	<a href="../hc/articles/218942197"><li class="cs-items">
-                Return/Refund Policy
-                </li></a>
-            	<a href="../hc/articles/218942167"><li class="cs-items">
-                Warranty Policy
-                </li></a>
-              <a href="../hc/articles/218942247"><li class="cs-items">
-                Web Store Terms & Conditions
-                </li></a>
-              <a href="../hc/sections/204634368"><li class="cs-items">
-                more...
-                </li></a>            
-            <li class="cg-dropdown">{{dc 'categories_title'}}</li>
-            	<a href= "../hc/categories/202689837"><li class="cg-items">
-                PS4
-                </li></a>
-            	<a href= "../hc/categories/202694798"><li class="cg-items">
-                Xbox One
-                </li></a>
-            	<a href= "../hc/categories/202689847"><li class="cg-items">
-                PC / Mac
-                </li></a> 
-            	<a href= "../hc/categories/202694818"><li class="cg-items">
-                PS3
-                </li></a>
-            	<a href= "../hc/categories/202694808"><li class="cg-items">
-                Xbox 360
-                </li></a>
-            	<a href= "../hc/categories/202951987"><li class="cg-items">
-                Universal
-                </li></a>
-            	<a href= "../hc/categories/202740407"><li class="cg-items">
-                General
-                </li></a>
-            <a href="../hc/categories/202925807"><li>{{dc 'legacy_title'}}</li></a>
-            <!--
-            <li class="live-agent"><a id="liveagent_button_online_573U000000001bb" class="menuItemSpace" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('573U000000001bb')"> Online <i class="icon-Community"></i></a>
-          <a id="liveagent_button_offline_573U000000001bb" class="menuItemSpace" href="//www.turtlebeach.com/contact-support"  style="display: none;"> Offline <i class="icon-Community"></i></a></li>
--->
+      <div class="side-col-left"></div>
+      <div class="main-content">
+        <div class="category-container">   
+          <h1 class = "page-title">{{dc 'products_platform'}}</h1>
+          <!-- List of Categories -->
+          <ul class="category-list">  
+            {{#each categories}}
+              {{#is name 'PS4'}}<li class="ps4"><a><div class="cat-icon ps4 normal"></div></a></li>{{/is}}
+              {{#is name 'Xbox One'}}<li class="x1"><a><div class="cat-icon x1 normal"></div></a></li>{{/is}}        
+              {{#is name 'PC / Mac'}}<li class="pc"><a><div class="cat-icon pc normal"></div></a></li>{{/is}}
+              {{#is name 'PS3'}}<li class="ps3"><a><div class="cat-icon ps3 normal"></div></a></li>{{/is}}
+              {{#is name 'Xbox 360'}}<li class="x360"><a><div class="cat-icon x360 normal"></div></a></li>{{/is}}
+            {{/each}}
+            {{pagination}}    
           </ul>
         </div>
-      </div>
-      <!-- END Side nav -->
-    <div class="main-content">
-      <div class="category-container">   
-        <h1 class = "page-title">{{dc 'products_platform'}} </h1>
-       <!-- List of Categories -->
-        <ul class="category-list">  
-          {{#each categories}}
-            {{#is name 'PS4'}}<li class="ps4"><a><div class="cat-icon ps4 normal"></div></a></li>{{/is}}
-            {{#is name 'Xbox One'}}<li class="x1"><a><div class="cat-icon x1 normal"></div></a></li>{{/is}}        
-            {{#is name 'PC / Mac'}}<li class="pc"><a><div class="cat-icon pc normal"></div></a></li>{{/is}}
-            {{#is name 'PS3'}}<li class="ps3"><a><div class="cat-icon ps3 normal"></div></a></li>{{/is}}
-            {{#is name 'Xbox 360'}}<li class="x360"><a><div class="cat-icon x360 normal"></div></a></li>{{/is}}
-          {{/each}}
-          {{pagination}}    
-        </ul>
-      </div>
-      <!-- Promoted Articles -->
-      {{#if promoted_articles}}
-        <div class="promoted-articles">
-          <div class="select-title"><h1 class="select-product">{{dc 'select_title'}}</h1><hr>
+        <!-- Promoted Articles -->
+        {{#if promoted_articles}}
+          <div class="promoted-articles">
+            <div class="select-title">
+              <h1 class="select-product">{{dc 'select_title'}}</h1>
+              <hr>
+            </div>
+            <div class="headset-list"></div>
+            <div class="promoted-articles-list">
+              <p class ="featured-articles-title">
+                {{dc 'featured_articles'}}
+           <!-- {{t 'promoted_articles'}} -->
+              </p>
+              <hr>
+        	    <ul>
+                {{#each promoted_articles}}
+                  <li>
+                    <a href="{{url}}"><span class="double-arrow">&raquo;</span><span class="other-title">{{title}}</span></a>
+                  </li>
+                {{/each}}
+       		    </ul>
+            </div>
           </div>
-          <div class="headset-list">           
-          </div>
-          <!--
-          <div class="other-products">
-          </div>
-					-->
-          <div class="promoted-articles-list">
-            <p class ="featured-articles-title">
-              {{dc 'featured_articles'}}
-              <!-- {{t 'promoted_articles'}} -->
-            </p>
-            <hr>
-        	  <ul>
-              {{#each promoted_articles}}
-              <li>
-                <a href="{{url}}"><span class="double-arrow">&raquo;</span><span class="other-title">{{title}}</span></a>
-              </li>
-              {{/each}}
-       		  </ul>
-          </div>
-        </div>
-      {{/if}}
-      <!-- Unused because Community isn't active
-      <div class="community">
-        {{#if help_center.community_enabled}}
-         <h4>
-          {{t 'community'}}
-          {{#link 'community'}}
-            {{t 'browse'}}
-          {{/link}}
-         </h4>
         {{/if}}
-        {{recent_activity scope='community'}}
       </div>
-      -->  
     </div>
-  </div>
-</section>
+  </section>
 </div>
