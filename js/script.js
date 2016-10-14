@@ -622,10 +622,10 @@ $(document).ready(function() {
   $( window ).resize( function () {
     $iframes.each( function() {
     // Get the parent container&#x27;s width
-    var width = $( this ).parent().width();
-    $( this ).width( width )
+      var width = $( this ).parent().width();
+      $( this ).width( width )
       .height( width * $( this ).data( "ratio" ) );
+    });
+    // Resize to fix all iframes on page load.
+    }).resize();
   });
-  // Resize to fix all iframes on page load.
-  }).resize();
-});
